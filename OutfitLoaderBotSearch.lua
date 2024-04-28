@@ -30,16 +30,7 @@ end
     local Tab2 = Init:NewTab("Community")
     local Section2 = Tab2:NewSection("Discord")
 
-    local Button1 = Tab1:NewButton("Search Bot | Disable", function()
-        local id = game:GetService("Players").LocalPlayer.UserId
-        local username = game:GetService("Players").LocalPlayer.Name
-        getgenv().search = false
-        if getgenv().search == false then
-            warn("No longer botting searches for: ", username)
-        end
-    end)
-
-    local Button2 = Tab1:NewButton("Search Bot | Enable", function()
+    local Button2 = Tab1:NewButton("Start Search Bot", function()
         local id = game:GetService("Players").LocalPlayer.UserId
         local username = game:GetService("Players").LocalPlayer.Name
         getgenv().search = true
